@@ -5,10 +5,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 
 // Style to override MUI components 
-const LoginStyles = {
+const AppStyles = {
   card: {
     height: '50%',
-    width: '30%',
+    width: '35%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
@@ -31,6 +31,6 @@ AppBoxShell.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const AppBox = withStyles(AppBox)(AppBoxShell);
-export { AppBoxShell };
+const AppBox = withStyles(AppStyles)(AppBoxShell);
+export { AppBox };
 

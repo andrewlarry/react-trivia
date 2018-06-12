@@ -6,7 +6,7 @@ module.exports = {
     main: path.join(__dirname, '../src/index.js')
   },
 	output: {
-		path: path.resolve(__dirname, '../dist')
+		path: path.resolve(__dirname, '../public')
 	},
 	module: {
 		rules: [
@@ -39,7 +39,7 @@ module.exports = {
 
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: './dist',
+		contentBase: './public',
 		hot: true,
 	},
 	mode: 'development'
