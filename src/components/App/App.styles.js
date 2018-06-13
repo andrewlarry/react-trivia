@@ -7,8 +7,8 @@ import Card from '@material-ui/core/Card';
 // Style to override MUI components 
 const AppStyles = {
   card: {
-    height: '50%',
-    width: '35%',
+    height: '85vh',
+    width: '40vw',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
@@ -32,5 +32,6 @@ AppBoxShell.propTypes = {
 };
 
 const AppBox = withStyles(AppStyles)(AppBoxShell);
+
 export { AppBox };
 

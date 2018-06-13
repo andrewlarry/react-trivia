@@ -35,7 +35,12 @@ export const Text = styled.p`
 const StartButtonShell = (props) => {
   return (
     <TextBox>
-      <Button size="large" className={props.classes.button} onClick={props.startGame}>Start</Button>
+      <Button 
+        size="large"
+        disabled={!props.ready}
+        className={props.classes.button} 
+        onClick={props.startGame}
+      >Start</Button>
     </TextBox>
   );
 }

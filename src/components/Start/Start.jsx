@@ -15,7 +15,7 @@ const Start = (props) => (
         Can you score 100%?
       </Text>
     </TextBox>
-    <StartButton startGame={props.startGame}/>
+    <StartButton startGame={props.startGame} ready={props.ready} />
   </div>
 
 );
