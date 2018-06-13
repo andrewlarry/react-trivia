@@ -22,7 +22,7 @@ module.exports = {
 	plugins: [
 		new UglifyJSPlugin(),
 		new MiniCssExtractPlugin({ filename: 'style.css' }),
-		new HtmlWebpackPlugin({ template: path.join(__dirname, '../src/index.html') }),
+		new HtmlWebpackPlugin({ template: path.join(__dirname, '../public/index.html') }),
 		new CleanWebpackPlugin(['dist']),
 	],
 	module: {
