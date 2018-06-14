@@ -34,7 +34,7 @@ const GameoverStyles = {
   },
   list: {
     position: 'absolute',
-    top: '15%',
+    top: '10%',
   }
 }
 
