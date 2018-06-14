@@ -1,15 +1,10 @@
 import React from 'react';
 
-import { ResultList, PlayAgainButton } from './Gameover.styles';
+import { Title } from '../Game/Game.styles';
+import { ResultList } from './Gameover.styles';
 
 const Gameover = (props) => {
-  console.log(PlayAgainButton);
-  return (
-    <div>
-      <ResultList results={props.results} />
-      <PlayAgainButton startGame={props.startGame} />
-    </div>
-  );
+  return <ResultList results={props.results} startGame={props.startGame} />;
 }
 
 

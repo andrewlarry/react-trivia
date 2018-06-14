@@ -10,6 +10,7 @@ const AppStyles = {
     height: '85vh',
     width: '40vw',
     display: 'flex',
+    position: 'relative',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     alignItems: 'center',

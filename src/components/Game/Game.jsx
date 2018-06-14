@@ -1,19 +1,29 @@
 import React from 'react';
 
-import { QuestionBox, GameButtons } from './Game.styles';
-import { Title, TextBox, Text } from '../Start/Start.styles';
+import { QuestionBox, GameButtons, GameBox, Title, CountBox } from './Game.styles';
+import { TextBox, Text } from '../Start/Start.styles';
 
 const Game = (props) => (
-  <div>
-    <TextBox>
-      <Title>{props.category}</Title>
-    </TextBox>
+  <GameBox>
+    <Title>{props.category}</Title>
+    <CountBox>Question: {props.number} / {props.count}</CountBox>
     <QuestionBox>
-      <Text>{props.question.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}</Text>
+        <Text>{props.question.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}</Text>
     </QuestionBox>
-    <Text>{props.number} / {props.count}</Text>
-    <GameButtons select={props.select} />
-  </div>
+    <GameButtons select={props.select} number={props.number} count={props.count}/>
+  </GameBox>
+  // <div>
+  //   <GameBox>
+  //     <TextBox>
+  //       <Title>{props.category}</Title>
+  //     </TextBox>
+  //     <QuestionBox>
+  //       <Text>{props.question.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}</Text>
+  //     </QuestionBox>
+  //     <Text>{props.number} / {props.count}</Text>
+  //   </GameBox>
+  //   <GameButtons select={props.select} />
+  // </div>
 
 );
 
